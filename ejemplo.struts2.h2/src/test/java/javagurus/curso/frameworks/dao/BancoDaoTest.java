@@ -62,15 +62,5 @@ public class BancoDaoTest {
 		System.out.println(banco.getNombre());
 		
 	}
-	
-	//@Test
-	public void testHibernateSession(){
-		bancoDAO.pruebaHibernateSession();
-	}
-	
-	@Test
-	public void testCriteriaQuering(){
-		bancoDAO.pruebaCriteriaQueryng();
-	}
 
 }

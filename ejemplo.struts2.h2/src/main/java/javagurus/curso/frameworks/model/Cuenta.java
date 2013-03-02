@@ -72,27 +72,6 @@ public class Cuenta implements java.io.Serializable {
 		this.numerocuenta = numerocuenta;
 	}
 
-	@Override
-	public int hashCode() {
-		return new HashCodeBuilder()
-		.append(idcuenta)
-		.append(numerocuenta)
-		.toHashCode();
-	}
-
-	@Override
-	public boolean equals(final Object obj) {
-		 if(obj instanceof Cuenta){
-			 final Cuenta otro = (Cuenta) obj;
-			 return new EqualsBuilder()
-			 .append(idcuenta, otro.getIdcuenta())
-			 .append(numerocuenta, otro.getNumerocuenta())
-			 .isEquals();
-		 } else {
-			 return false;
-		 }
-	}
-
 	public Set getMovimientos() {
 		return this.movimientos;
 	}
